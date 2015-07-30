@@ -12,15 +12,17 @@ since it done it's job, I guess it might be also useful to someone else.
 How to use it
 -------------
 
+```
 java -jar tumblrImageDownloader [sitename...] [options...]
+```
 
 You can specify more than one site. Either you provide a full URL like e.g.
 http://spongebob-closeups.tumblr.com/ or just the name of the tumblr site (spongebob-closeups).
 
 Available options are:
- -p[path]        Specify download directory
- -ds             don't stop downloading a site after the first image was found which has been already downloaded 
- -u              Check for updates. This option will search for subdirectories in the destination directory and use the subdirectory-name as the name of the tumblr-page.
+- -p[path]        Specify download directory
+- -ds             don't stop downloading a site after the first image was found which has been already downloaded 
+- -u              Check for updates. This option will search for subdirectories in the destination directory and use the subdirectory-name as the name of the tumblr-page.
 
 If you are not providing any download directory, images will be saved in: [home-directory]/tumblrImages/
 For each specified sitename a subdirectory is created into which the images are downloaded.
